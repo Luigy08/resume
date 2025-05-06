@@ -1,0 +1,277 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Resumen Profesional">
+  <div class="w-4/5  flex justify-center items-center font-serif">
+    <div class="flex gap-4 flex-row">
+      <!-- Left Column (60%) -->
+      <div class="w-[60%] flex flex-col">
+        <!-- Profile Section -->
+        <div class="flex items-center mb-6">
+          <img
+            src="../../public/images/profile.webp"
+            alt="Luis Fernando Lainez Meza"
+            class="w-20 h-20 rounded-full mr-4"
+          />
+          <h1 class="text-2xl font-bold text-gray-800">
+            Luis Fernando Laínez Meza
+          </h1>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="mb-6">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Perfil</h2>
+          <p class="text-gray-600">
+            Soy un desarrollador full-stack de aplicaciones web y móviles con
+            casi 8 años de experiencia profesional. Gracias a la experiencia que
+            he adquirido, he aprendido a adaptarme a entornos cambiantes, la
+            importancia del trabajo en equipo, el aprendizaje autodidacta y
+            estar siempre actualizado con las nuevas tecnologías. Personalmente,
+            soy muy apasionado por la programación, siempre buscando mejorar mis
+            habilidades y enriquecer mi conocimiento.
+          </p>
+        </div>
+
+        <!-- Employment History Section -->
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            Experiencia Laboral
+          </h2>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-gray-800">
+              Full Stack, WGSN, New York
+            </h3>
+            <p class="text-sm text-gray-400 mb-2">JUNIO 2024 - PRESENTE</p>
+            <p class="text-gray-600">
+              Participo en el equipo de desarrollo de WGSN responsable de crear,
+              optimizar y mejorar los servicios internos clave para las
+              operaciones de la empresa.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-gray-800">
+              Tech Lead, Code Exitos, Tegucigalpa
+            </h3>
+            <p class="text-sm text-gray-400 mb-2">OCTUBRE 2023 - JUNIO 2024</p>
+            <p class="text-gray-600">
+              Como tech lead, he liderado un proyecto con un equipo de 6
+              miembros, incluyendo desarrolladores y diseñadores. El proyecto
+              utiliza tecnología de IA, para la cual entrenamos nuestro propio
+              modelo usando Vertex AI en GCP. Además, empleamos servicios de
+              Text-to-Speech (TTS) y Speech-to-Text (STT) para facilitar la
+              interacción natural.
+            </p>
+            <p class="text-gray-600 pt-4">
+              Colaboré en el equipo de desarrollo de la aplicación utilizada por
+              los concesionarios Stellantis en Canadá, optimizando los procesos
+              de cotización, venta y demostración de automóviles.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-gray-800">
+              Senior Full Stack Developer, Code Exitos, Tegucigalpa
+            </h3>
+            <p class="text-sm text-gray-400 mb-2">JULIO 2022 - OCTUBRE 2023</p>
+            <p class="text-gray-600">
+              He tenido la oportunidad de desarrollar proyectos altamente
+              complejos tanto a nivel arquitectónico como lógico, incluyendo el
+              desarrollo e implementación de microservicios, web 3.0. Proyectos
+              en los que trabajé: Stellantis, Binbox Smart Locker, etc...
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-gray-800">
+              Senior Developer, Team Lead, Farinter, Tegucigalpa
+            </h3>
+            <p class="text-sm text-gray-400 mb-2">
+              DICIEMBRE 2019 - JULIO 2022
+            </p>
+            <p class="text-gray-600">
+              En Farinter, tuve un mayor enfoque en el desarrollo de E-commerce,
+              participando en el desarrollo front-end y back-end. Además de
+              tener un crecimiento profesional significativo, tuve la
+              oportunidad de liderar un equipo de desarrollo.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-gray-800">
+              Web Developer, AUREM
+            </h3>
+            <p class="text-sm text-gray-400 mb-2">
+              FEBRERO 2018 - DICIEMBRE 2019
+            </p>
+            <p class="text-gray-600">
+              Durante este período, trabajé bajo la metodología ágil SCRUM
+              utilizando React.js, Meteor.js, Express.js, MongoDB como
+              frameworks principales para llevar a cabo diferentes proyectos. Mi
+              tiempo en AUREM me dio una gran experiencia en el desarrollo de
+              APIs, CMS y CRM.
+            </p>
+          </div>
+          <!-- Education Section -->
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Educación</h2>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-medium text-gray-800">
+                Ingeniero en Sistemas Computacionales, UNITEC
+              </h3>
+              <p class="text-sm text-gray-400 mb-2">ENERO 2015 - JUNIO 2021</p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-medium text-gray-800">
+                Curso de Sistemas Inteligentes y Tecnologías Emergentes,
+                Universidad Politécnica de Valencia, Valencia
+              </h3>
+              <p class="text-sm text-gray-400 mb-2">JULIO 2019 - AGOSTO 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (40%) -->
+      <div class="w-[40%] bg-gray-800 p-6 rounded-lg">
+        <!-- Content for the right column will go here -->
+        <!-- Details Section -->
+        <div class="mb-6">
+          <h2 class="text-xl font-semibold text-white mb-4">Detalles</h2>
+          <div class="mb-4">
+            <p class="text-gray-300">Tegucigalpa, Honduras</p>
+            <p class="text-gray-300">+504 9780-5284</p>
+            <p class="text-gray-300">llainez.meza@gmail.com</p>
+          </div>
+
+          <h2 class="text-xl font-semibold text-white mb-4">Enlaces</h2>
+          <div class="mb-4">
+            <p class="text-gray-300">
+              <a
+                href="https://www.linkedin.com/in/luis-lainez-5ab85417b/"
+                class="text-blue-400 hover:text-blue-300">LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-sm mb-6">
+          <h2 class="text-xl font-semibold text-white mb-4">Habilidades</h2>
+          <ul class="list-disc pl-5 mb-4">
+            <li class="text-gray-300 mb-1">
+              Capacidad para trabajar bajo presión
+            </li>
+            <li class="text-gray-300 mb-1">Resolución de problemas</li>
+            <li class="text-gray-300 mb-1">Trabajo en equipo</li>
+            <li class="text-gray-300 mb-1">Liderazgo</li>
+            <li class="text-gray-300 mb-1">Comunicación</li>
+            <li class="text-gray-300 mb-1">Multitarea</li>
+            <li class="text-gray-300 mb-1">Adaptabilidad</li>
+            <li class="text-gray-300 mb-1">Buena gestión del tiempo</li>
+          </ul>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-sm mb-6">
+          <h2 class="text-xl font-semibold text-white mb-4">Idiomas</h2>
+          <ul class="list-disc pl-5 mb-4">
+            <li class="text-gray-300 mb-1">Español</li>
+            <li class="text-gray-300 mb-1">Inglés</li>
+          </ul>
+        </div>
+
+        <!-- Technologies Section -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-sm mb-6">
+          <h2 class="text-xl font-semibold text-white mb-4">Tecnologías</h2>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-white mb-2">Front-end</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >React.js</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">Vue.js</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >Next.js</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >Angular</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >React Native</span
+              >
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-white mb-2">Back-end</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >Express.js</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >Nest.js</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >Node.js</span
+              >
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-white mb-2">Base de Datos</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >PostgreSQL</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">SQL</span>
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >MongoDB</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >DynamoDB</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">Redis</span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-white mb-2">Servicios</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">AWS</span>
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">GCP</span>
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">Azure</span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h3 class="text-lg font-medium text-white mb-2">
+              Lenguajes de Programación
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >JavaScript</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm"
+                >TypeScript</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">Python</span
+              >
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">C++</span>
+              <span class="text-gray-300 px-2 py-1 rounded text-sm">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
