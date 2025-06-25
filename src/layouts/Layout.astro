@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import FloatingPrintButton from "../components/FloatingPrintButton.astro";
 
 interface Props {
 	title: string;
@@ -20,6 +21,8 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-blue-50">
+  <FloatingPrintButton />
+
 		<div class="min-h-screen relative flex justify-center items-center py-12">
 				<slot />
 		</div>

@@ -1,0 +1,88 @@
+---
+// FloatingPrintButton.astro
+---
+
+<button
+  id="printButton"
+  class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 print:hidden"
+  title="Print Resume as PDF"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+  boton
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+    />
+  </svg>
+</button>
+
+<style>
+  @media print {
+    body {
+      font-size: 12px;
+    }
+    
+    .print\:hidden {
+      display: none !important;
+    }
+    
+    .w-4\/5 {
+      width: 100% !important;
+    }
+    
+    .flex-row {
+      flex-direction: row !important;
+    }
+    
+    .gap-4 {
+      gap: 1rem !important;
+    }
+    
+    .bg-gray-800 {
+      background-color: #1f2937 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .text-white {
+      color: white !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .text-gray-300 {
+      color: #d1d5db !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .bg-gray-700 {
+      background-color: #374151 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const printButton = document.getElementById('printButton');
+    
+    if (printButton) {
+      printButton.addEventListener('click', function() {
+        // Optional: Add a small delay to ensure styles are applied
+        setTimeout(() => {
+          window.print();
+        }, 100);
+      });
+    }
+  });
+</script>
