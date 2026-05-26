@@ -42,7 +42,7 @@ export const ui = {
     'section.details': 'Details',
     'details.location': 'Tegucigalpa, Honduras',
     'details.phone': '+504 9780-5284',
-    'details.email': 'lainez.meza@gmail.com',
+    'details.email': 'llainez.meza@gmail.com',
     'section.links': 'Links',
     'link.linkedin': 'LinkedIn',
     // Skills, Languages, Technologies
@@ -135,7 +135,7 @@ export const ui = {
     'section.details': 'Detalles',
     'details.location': 'Tegucigalpa, Honduras',
     'details.phone': '+504 9780-5284',
-    'details.email': 'lainez.meza@gmail.com',
+    'details.email': 'llainez.meza@gmail.com',
     'section.links': 'Enlaces',
     'link.linkedin': 'LinkedIn',
     // Skills, Languages, Technologies
